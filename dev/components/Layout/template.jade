@@ -1,0 +1,24 @@
+section.Layout
+	h1
+		| Marvel Card Game
+
+	section.Layout-antagonist
+		each card in [1,2,3,4,5]
+			include ../Card/template.jade
+
+	section.Layout-main
+
+		div.Layout-status
+			each name in ["Ricardo","Pepito"]
+				include ../Status/template.jade
+
+		div.Layout-battle
+			include ../Battle/template.jade
+
+		div.Layout-phases
+			- text = "OMG El ataque es muy poderoso y le bajaste 1000 puntos"
+			include ../Phases/template.jade
+
+	section.Layout-player
+		each card in [1,2,3,4,5]
+			include ../Card/template.jade

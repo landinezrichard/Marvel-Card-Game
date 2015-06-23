@@ -1,0 +1,11 @@
+Repo:
+
+https://github.com/platzi/platzifrontend-marvel
+
+Api Marvel:
+
+http://developer.marvel.com/
+
+Convertir Html a Jade:
+
+http://html2jade.org/

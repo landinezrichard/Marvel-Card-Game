@@ -1,0 +1,18 @@
+{
+  "name": "Marvel-Card-Game",
+  "version": "1.0.0",
+  "description": "Juego de cartas usando la API de Marvel, probando tecnologias Frontend. Idea Original de Platzi",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "stylus -u nib -c -w -o public/css/ dev/stylus/estilos.styl",
+    "build-html": "jade -P -w -o ./public ./dev/index.jade",
+    "build-js": "browserify ./dev/app.js -t babelify -o ./public/js/app.js"
+  },
+  "author": "Ricardo Landínez <landinezrichard@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jade": "^1.11.0",
+    "nib": "^1.1.0",
+    "stylus": "^0.51.1"
+  }
+}
