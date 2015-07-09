@@ -3,6 +3,7 @@ section.Layout
 		| Marvel Card Game
 
 	section.Layout-antagonist
+		- clase = "Card--antagonist"
 		each card in [1,2,3,4,5]
 			include ../Card/template.jade
 
@@ -13,6 +14,7 @@ section.Layout
 				include ../Status/template.jade
 
 		div.Layout-battle
+			- clase = ""
 			include ../Battle/template.jade
 
 		div.Layout-phases
@@ -20,5 +22,6 @@ section.Layout
 			include ../Phases/template.jade
 
 	section.Layout-player
+		- clase = "Card--player"
 		each card in [1,2,3,4,5]
 			include ../Card/template.jade
