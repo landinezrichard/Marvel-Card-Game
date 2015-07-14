@@ -1,3 +1,5 @@
+let $ = require('jquery');
+
 class MarvelApi {
 	constructor (apikey) {
 		this.apikey = apikey;
@@ -62,8 +64,8 @@ class MarvelApi {
     }
 }
 
-window.MarvelApi = MarvelApi;
-
+//window.MarvelApi = MarvelApi;
+export default MarvelApi;
 
 //http://gateway.marvel.com:80/v1/public/series/354/characters?limit=40&apikey=abf73bd71b9caf5d32a55e18f5bd24ae
 

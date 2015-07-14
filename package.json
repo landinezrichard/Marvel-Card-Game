@@ -6,8 +6,7 @@
   "scripts": {
     "build-css": "stylus -u nib -c -w -o public/css/ dev/stylus/estilos.styl",
     "build-html": "jade -P -w -o ./public ./dev/index.jade",
-    "build-js": "browserify ./dev/app.js -t babelify -o ./public/js/app.js",
-    "babel": "babel -w ./dev --out-dir ./public/js"
+    "build-js": "browserify ./dev/app.js -t babelify -t jadeify -o ./public/js/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,15 +14,16 @@
   },
   "author": "Ricardo Landínez <landinezrichard@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "babel": "^5.6.5",
+  "devDependencies": {    
     "babelify": "^6.1.2",
     "browserify": "^10.2.4",
     "jade": "^1.11.0",
+    "jadeify": "^4.3.0",
     "nib": "^1.1.0",
     "stylus": "^0.51.1"
   },
   "dependencies": {
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "page": "^1.6.3"
   }
 }
